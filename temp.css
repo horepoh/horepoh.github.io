@@ -6,7 +6,8 @@ p {
 }
 
 #first-paragraph {
-	font-family: helvetica, san-serif;		
+	font-family: helvetica, san-serif;
+	text-align: left;
 font-size: 16px;
 color: blue; 
 }
