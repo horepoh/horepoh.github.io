@@ -2,12 +2,12 @@ p {
     color: teal;
     font-size: 50px;
     text-align: center;
+	margin: 0 auto;
     background color: gray;
 }
 
 #first-paragraph {
-	font-family: helvetica, san-serif;
-	text-align: left;
-font-size: 16px;
+font-family: helvetica, san-serif;
+font-size: 25px;
 color: blue; 
 }
