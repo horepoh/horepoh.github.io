@@ -4,3 +4,9 @@ p {
     text-align: center;
     background color: gray;
 }
+
+#first-paragraph {
+	font-family: helvetica, san-serif;		
+font-size: 16px;
+color: blue; 
+}
