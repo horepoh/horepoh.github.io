@@ -1,6 +1,6 @@
 p {
     color: teal;
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
 	margin: 0 auto;
     background color: gray;
@@ -9,5 +9,5 @@ p {
 #first-paragraph {
 font-family: helvetica, san-serif;
 font-size: 25px;
-color: blue; 
+color: teal; 
 }
