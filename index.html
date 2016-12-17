@@ -85,7 +85,7 @@
 <script>
 	function openTab(cnt, TabName) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent").click();
+    tabcontent = document.getElementsByClassName(TabName);
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
