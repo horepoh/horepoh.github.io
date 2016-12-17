@@ -61,7 +61,7 @@ ul.tab li a:focus, .active {
   <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Interests and Passions')">Interests and Passions</a></li>
 </ul>
 <div id="Birth And Breed" class="tabcontent">
-	<h3 style="color:teal;font-family:freestyle script;font-size:300%;"><b><ins>Birth And Breed</ins></b></h3>
+	<h3 class="tab" style="color:teal;font-family:freestyle script;font-size:300%;"><b><ins>Birth And Breed</ins></b></h3>
 	<p class="tab" style="color:teal;font-family:MV Boli;font-size:150%;">Hey there!<br/>I'm Oluwatoyosi Oladepo (I know! Long name); I'm Nigerian <img src="https://oldnaija.files.wordpress.com/2015/11/flag.jpg?w=350&h=200&crop=1" alt="Nigerian Flag" width="25" height="25">. 
 		Call me Toyosi &#128522;.<br/>I'm originally from the south-western part of Nigeria - Osogbo, Osun State. I was born June 9th (Gemini all the way! &#128521;) 1995 and raised, in Lagos State, Nigeria. 
 		I grew up living with my parents, sister, and cousin. I have 2 step-sisters. My favourite colours are Gray and Teal, and <br/><img class="tab" src="http://orsimages.unileversolutions.com/ORS_Images/Knorr_en-NG/spaghetti_meat_balls_40_3.1.45_326X580_40_3.1.45_326X580_40_3.1.45_326X580.Jpeg" alt="SPAGHETTI" width="200" height="152">
@@ -82,18 +82,18 @@ ul.tab li a:focus, .active {
 	</p>
 </div>
 <script>
-	function openTab(cnt, tabName) {
+	function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "tabcontent";
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(tabName).style.display = "block";
-    cnt.currentTarget.className += " active";
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
 	document.getElementById("defaultOpen").click();
 </script>
