@@ -6,54 +6,53 @@
 	.tab { margin-left: 300px; }
 	-->
 	</style>
-	
+	<style>
+	body {font-family: "Lato", sans-serif;}
+	ul.tab {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: teal;
+	}
+
+	/* Float the list items side by side */
+	ul.tab li {float: left;}
+
+	/* Style the links inside the list items */
+	ul.tab li a {
+	    display: inline-block;
+	    color: turquoise;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    transition: 0.3s;
+	    font-size: 20px;
+	}
+
+	/* Change background color of links on hover */
+	ul.tab li a:hover {background-color: #ddd;}
+
+	/* Create an active/current tablink class */
+	/*ul.tab li a:focus, .active {
+	    background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+		display: block;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+	}
+	</style>
 	<title>"AutoBio"</title>
 	<h1 style="color:teal;font-family:ravie;font-size:400%;"> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaXH8WT6xsqD3DN41QyyhqKsw9BnSao7TerrDry5OsEvWpTgANkg" alt="Nice To Meet Me" width="300" height="300"> MEET ME </h1>
 	<hr>
 </head>
 
 <body>
-<style>
-body {font-family: "Lato", sans-serif;}
-ul.tab {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	border: 1px solid #ccc;
-	background-color: teal;
-}
-
-/* Float the list items side by side */
-ul.tab li {float: left;}
-
-/* Style the links inside the list items */
-ul.tab li a {
-    display: inline-block;
-    color: turquoise;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 20px;
-}
-
-/* Change background color of links on hover */
-ul.tab li a:hover {background-color: #ddd;}
-
-/* Create an active/current tablink class */
-/*ul.tab li a:focus, .active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-	display: block;
-	padding: 6px 12px;
-	border: 1px solid #ccc;
-	border-top: none;
-}
-</style>
 	
 <ul class="tab">
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'BirthAndBreed')">Birth And Breed</a></li>
