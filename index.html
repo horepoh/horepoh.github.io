@@ -6,60 +6,58 @@
 	.tab { margin-left: 300px; }
 	-->
 	</style>
-	
-	<style>
-		ul.tab {
-		    list-style-type: none;
-		    margin: 0;
-		    padding: 0;
-		    overflow: hidden;
-		    border: 1px solid #ccc;
-		    background-color: teal;
-		}
-
-		/* Float the list items side by side */
-		ul.tab li {float: left;}
-
-		/* Style the links inside the list items */
-		ul.tab li a {
-		    display: inline-block;
-		    color: turquoise;
-		    text-align: center;
-		    padding: 14px 16px;
-		    text-decoration: none;
-		    transition: 0.3s;
-		    font-size: 20px;
-		}
-
-		/* Change background color of links on hover */
-		ul.tab li a:hover {
-		    background-color: #ddd;
-		}
-
-		/* Create an active/current tablink class */
-		/*ul.tab li a:focus, .active {
-		    background-color: #ccc;
-		}
-
-		/* Style the tab content */
-		.tabcontent {
-		display: block;
-		padding: 6px 12px;
-		border: 1px solid #ccc;
-		border-top: none;
-		}
-	</style>
 	<title>"AutoBio"</title>
 	<h1 style="color:teal;font-family:ravie;font-size:400%;"> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaXH8WT6xsqD3DN41QyyhqKsw9BnSao7TerrDry5OsEvWpTgANkg" alt="Nice To Meet Me" width="300" height="300"> MEET ME </h1>
 	<hr>
 </head>
+<style>
+body {font-family: "Lato", sans-serif;}
+ul.tab {
+	list-style-type: none;
+   	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	border: 1px solid #ccc;
+    	background-color: teal;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: turquoise;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+/*ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+</style>
 
 <body style="background-color:#F0F0F0;">
 	
 <ul class="tab">
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'BirthAndBreed')" id="defaultOpen">Birth And Breed</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'Education')" className="tabcontent">Education</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'InterestsandPassions')" className="tabcontent">Interests and Passions</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'Education')">Education</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'InterestsandPassions')">Interests and Passions</a></li>
 </ul>
 <div id="BirthAndBreed" class="tabcontent">
 	<h3 class="tab" style="color:teal;font-family:freestyle script;font-size:300%;"><b><ins>Birth And Breed</ins></b></h3>
@@ -82,21 +80,22 @@
 	<p class="tab" style="color:teal;font-family:MV Boli;font-size:150%;"> Fashion, old people, christianity, heaven, my family, making a difference, calligraphy, dance, music, harmonizing &#127926;, technology, design, clothes, sneakers, programming, a good makeover hanging out with friends, all things movie-related, languages, military, and organizing. 
 	</p>
 </div>
+	
 <script>
-	function openTab(cnt, TabName) {
+function openTab(cnt, tabName) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent").click();
+    tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+	tabcontent[i].style.display = "none";
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+	tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(TabName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     cnt.currentTarget.className += " active";
 }
-	document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click();
 </script>
 </body>
 </html>
