@@ -11,7 +11,56 @@
 	<hr>
 
 </head>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
 <body style="background-color:#F0F0F0;">
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Birth And Breed')">Birth And Breed</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Education')">Education</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Interests and Passions')">Interests and Passions</a></li>
+</ul>
 	<h2 class="tab" style="color:teal;font-family:freestyle script;font-size:300%;"><b><ins>Birth And Breed</ins></b></h2>
 	<p class="tab" style="color:teal;font-family:MV Boli;font-size:150%;">Hey there!<br/>I'm Oluwatoyosi Oladepo (I know! Long name); I'm Nigerian <img src="https://oldnaija.files.wordpress.com/2015/11/flag.jpg?w=350&h=200&crop=1" alt="Nigerian Flag" width="25" height="25">. 
 		Call me Toyosi &#128522;.<br/>I'm originally from the south-western part of Nigeria - Osogbo, Osun State. I was born June 9th (Gemini all the way! &#128521;) 1995 and raised, in Lagos State, Nigeria. 
@@ -27,7 +76,7 @@
 	<br/>
 	<br/>
 	<h2 class="tab" style="color:teal;font-family:freestyle script;font-size:300%;"><b><ins>Interests and Passions</ins></b></h2>
-	<p class="tab" style="color:teal;font-family:MV Boli;font-size:150%;"> Fashion, old people, christianity, heaven, my family, making a difference, calligraphy, dance, music, harmonizing &#127926;, technology, design, clothes, sneakers, programming, a good makeover hanging out with friends, all things movie-related, languages, military, organizing, 
+	<p class="tab" style="color:teal;font-family:MV Boli;font-size:150%;"> Fashion, old people, christianity, heaven, my family, making a difference, calligraphy, dance, music, harmonizing &#127926;, technology, design, clothes, sneakers, programming, a good makeover hanging out with friends, all things movie-related, languages, military, and organizing. 
 	</p>
 </body>
 </html>
