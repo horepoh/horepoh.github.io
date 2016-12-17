@@ -42,7 +42,7 @@
 
 		/* Style the tab content */
 		.tabcontent {
-		    display: .tabcontent;
+		    display: none;
 		    padding: 6px 12px;
 		    border: 1px solid #ccc;
 		    border-top: none;
@@ -85,7 +85,7 @@
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = tabcontent;
+        tabcontent[i].style.display = "none";
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
