@@ -147,19 +147,21 @@
 			</div>
     		</div>
 	</div>
-jQuery(document).ready(function() {
-	jQuery('.tabs .tab-links a').on('click', function(e)  {
-		var currentAttrValue = jQuery(this).attr('href');
- 
-		<!--Show/Hide Tabs-->
-		jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+<query/>
+	jQuery(document).ready(function() {
+		jQuery('.tabs .tab-links a').on('click', function(e)  {
+			var currentAttrValue = jQuery(this).attr('href');
 
-		<!-- Change/remove current tab to active-->
-		jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+			<!--Show/Hide Tabs-->
+			jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
 
-		e.preventDefault();
-    	});
-});
+			<!-- Change/remove current tab to active-->
+			jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+			e.preventDefault();
+		});
+	});
+<query/>
 <!--
 <ul class="tab">
   <li class="active"><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'Birth And Breed')" id="defaultOpen">Birth And Breed</a></li>
