@@ -6,7 +6,7 @@
 	.tab { margin-left: 300px; }
 	-->
 	</style>
-	<style>
+	<!--<style>
 		.tabs {
 		    width:100%;
 		    display:inline-block;
@@ -62,7 +62,8 @@
 			.tab.active {
 			    display:block;
 			}
-		/*
+		-->
+	<style>
 		ul.tab {
 		    list-style-type: none;
 		    margin: 0;
@@ -73,10 +74,10 @@
 		}
 
 		/* Float the list items side by side */
-		/*ul.tab li {float: left;}
+		ul.tab li {float: left;}
 
 		/* Style the links inside the list items */
-		/*ul.tab li a {
+		ul.tab li a {
 		    display: inline-block;
 		    color: turquoise;
 		    text-align: center;
@@ -87,23 +88,22 @@
 		}
 
 		/* Change background color of links on hover */
-		/*ul.tab li a:hover {
+		ul.tab li a:hover {
 		    background-color: #ddd;
 		}
 
 		/* Create an active/current tablink class */
-		/*ul.tab li a:focus, .active {
+		ul.tab li a:focus, .active {
 		    background-color: #ccc;
 		}
 
 		/* Style the tab content */
-		/*.tabcontent {
+		.tabcontent {
 		    display: block;
 		    padding: 6px 12px;
 		    border: 1px solid #ccc;
 		    border-top: none;
 		}
-		*/
 		</style>
 		<title>"AutoBio"</title>
 		<h1 style="color:teal;font-family:ravie;font-size:400%;"> <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaXH8WT6xsqD3DN41QyyhqKsw9BnSao7TerrDry5OsEvWpTgANkg" alt="Nice To Meet Me" width="300" height="300"> MEET ME </h1>
@@ -111,7 +111,7 @@
 </head>
 
 <body style="background-color:#F0F0F0;">
-	<div class="tabs">
+	<!--<div class="tabs">
 		<ul class="tab-links">
 			<li class="active"><a href="#tab1">Birth And Breed</a></li>
 			<li><a href="#tab2">Education</a></li>
@@ -152,17 +152,17 @@
 		jQuery('.tabs .tab-links a').on('click', function(e)  {
 			var currentAttrValue = jQuery(this).attr('href');
 
-			<!--Show/Hide Tabs-->
+			/*Show/Hide Tabs
 			jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
 
-			<!-- Change/remove current tab to active-->
+			/*Change/remove current tab to active
 			jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
 
 			e.preventDefault();
 		});
 	});
 <query/>
-<!--
+-->
 <ul class="tab">
   <li class="active"><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'Birth And Breed')" id="defaultOpen">Birth And Breed</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'Education')">Education</a></li>
@@ -205,6 +205,5 @@
 }
 	document.getElementById("defaultOpen").click();
 </script>
--->
 </body>
 </html>
