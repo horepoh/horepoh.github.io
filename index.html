@@ -55,7 +55,7 @@ ul.tab li a:hover {background-color: #ddd;}
 <body style="background-color:#F0F0F0;">
 	
 <ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'BirthAndBreed')" id="defaultOpen">Birth And Breed</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'BirthAndBreed')">Birth And Breed</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'Education')">Education</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(content, 'InterestsandPassions')">Interests and Passions</a></li>
 </ul>
@@ -95,7 +95,6 @@ function openTab(cnt, tabName) {
     document.getElementById(tabName).style.display = "block";
     cnt.currentTarget.className += " active";
 }
-document.getElementById("defaultOpen").click();
 </script>
 	
 </body>
