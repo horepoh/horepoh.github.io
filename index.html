@@ -60,7 +60,7 @@
   <li><a href="#InterestsandPassions" class="tablinks" onclick="openTab(content, 'InterestsandPassions')">Interests and Passions</a></li>
   <li><a href="#HollaAtMe" class="tablinks" onclick="openTab(content, 'HollaAtMe')">Holla At Me&#128526;</a></li>
 </ul>
-<div id="BirthAndBreed">
+<div id="BirthAndBreed" class="tabcontent">
 	<h3 class="tab" style="color:teal;font-family:freestyle script;font-size:300%;"><b><ins>Birth And Breed</ins></b></h3>
 	<p class="tab" style="color:teal;font-family:MV Boli;font-size:150%;">Hey there!<br/>I'm Oluwatoyosi Oladepo (I know! Long name); I'm Nigerian <img src="https://oldnaija.files.wordpress.com/2015/11/flag.jpg?w=350&h=200&crop=1" alt="Nigerian Flag" width="25" height="25">. 
 		Call me Toyosi &#128522;.<br/>I'm originally from the south-western part of Nigeria - Osogbo, Osun State. I was born June 9th (Gemini all the way! &#128521;) 1995 and raised, in Lagos State, Nigeria. 
@@ -95,18 +95,18 @@
 <script>
 function openTab(cnt, tabName) {
     var i, tabcontent, tablinks;
-    tabcontent = cnt.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
 	tabcontent[i].style.display = "none";
     }
-    tablinks = cnt.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
 	tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    cnt.getElementById(tabName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     cnt.currentTarget.className += " active";
     // Get the element with id="defaultOpen" and click on it
-    cnt.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen").click();
 }
 </script>
 	
